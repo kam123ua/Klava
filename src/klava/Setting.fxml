@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="298.0" prefWidth="505.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="klava.SettingController">
+   <children>
+      <Label fx:id="labelText" layoutX="14.0" layoutY="14.0" prefHeight="38.0" prefWidth="467.0" text="Please сhoose settings:">
+         <font>
+            <Font size="25.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="This makes it possible to set up a test for yourself" />
+         </tooltip>
+      </Label>
+      <CheckBox fx:id="checkTime" layoutX="14.0" layoutY="71.0" mnemonicParsing="false" onAction="#editTime" prefHeight="38.0" prefWidth="193.0" text="time limit">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Klava will stop a test when time is over" />
+         </tooltip>
+      </CheckBox>
+      <TextField fx:id="textTime" disable="true" layoutX="231.0" layoutY="69.0" prefHeight="42.0" prefWidth="250.0" promptText="(seconds)">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </TextField>
+      <CheckBox fx:id="checkMultilingual" layoutX="14.0" layoutY="125.0" mnemonicParsing="false" onAction="#editMultilingual" prefHeight="38.0" prefWidth="250.0" text="multilingual">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Klava will give you a words on different languages" />
+         </tooltip>
+      </CheckBox>
+      <Label layoutX="14.0" layoutY="176.0" prefHeight="38.0" prefWidth="211.0" text="Choose language:">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="chooseLanguage" layoutX="227.0" layoutY="176.0" prefHeight="38.0" prefWidth="264.0" />
+      <Button fx:id="btnOK" layoutX="170.0" layoutY="237.0" mnemonicParsing="false" onAction="#set" prefHeight="42.0" prefWidth="156.0" style="-fx-background-color: #ffffff;" text="OK" textAlignment="CENTER">
+         <font>
+            <Font size="19.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/okey.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <tooltip>
+            <Tooltip text="Start test" />
+         </tooltip>
+      </Button>
+   </children>
+</Pane>

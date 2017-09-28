@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="201.0" prefWidth="505.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="klava.StartController">
+   <children>
+      <Button fx:id="btnOK" layoutX="57.0" layoutY="19.0" mnemonicParsing="false" onAction="#startTest" prefHeight="70.0" prefWidth="392.0" style="-fx-background-color: #ffffff;" text="Start test" textAlignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/klava.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <tooltip>
+            <Tooltip text="Start test" />
+         </tooltip>
+      </Button>
+      <Button layoutX="57.0" layoutY="107.0" mnemonicParsing="false" onAction="#exit" prefHeight="70.0" prefWidth="392.0" style="-fx-background-color: #ffffff;" text="Exit" textAlignment="CENTER">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/exit.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+         <tooltip>
+            <Tooltip text="Close application" />
+         </tooltip>
+      </Button>
+   </children>
+</Pane>
